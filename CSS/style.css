@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://cdn.portofportland.com/news/images/GG7_8500.jpg');    
+}
+.conta{
+    display: flex;
+}
+img{
+    width: 410px;
+    height: 400px;
+    border-radius: 7px;
+}
+.box{
+    height: 400px;
+    margin: 50px;
+    box-shadow: 2px 2px 10px black;
+    overflow: hidden;
+}
+.title{
+    height: 60px;
+    width: 410px;
+    color: white;
+    padding: 6px;
+    box-sizing: border-box;
+    bottom: 125px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    transition: .45s ease-in-out;
+}
+h1{
+    color: coral;
+    margin: 10px;
+    font-size: 30px;
+}
+p{
+    color: lightgreen;
+    margin: 10px;
+    visibility: hidden;
+    opacity: 0;
+}
+.box:hover .title{
+    height: 170px;
+    bottom: 125px;
+    background-color: black;
+}
+.box:hover{
+    cursor: pointer;
+}
+.box:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+img{
+    transition: 1s ease-in-out;
+}
+img:hover{
+    transform: scale(1.20);
+}
